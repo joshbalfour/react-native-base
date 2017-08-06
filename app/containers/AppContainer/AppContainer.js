@@ -8,10 +8,15 @@ import {
 
 import HelloWorld from '../../components/HelloWorld'
 
+import routes from '../../routes'
+import { Router } from 'react-native-router-flux'
+
 class AppContainer extends Component {
 	render() {
 		return (
-			<HelloWorld />
+			<Router>
+				{routes()}
+			</Router>
 		)
 	}
 }
